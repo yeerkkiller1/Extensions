@@ -1,31 +1,17 @@
-﻿using System;
+﻿using GoodInterfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NUnit.Framework;
 
-namespace Extensions
+namespace FormsExtensions
 {
-    public class ITextbox : TextBox
-    {
-
-    }
-
     public static class ControlExts
     {
-        public static void Set(this TextBox textbox, string text)
-        {
-            if(textbox.InvokeRequired)
-            {
-                textbox.Invoke(new Action<string>(textbox.Set), new object[]{text});
-                return;
-            }
-            if (textbox.Text == text) return;
-            textbox.Text = text;
-        }
-
-        public static void Set(this RichTextBox textbox, string text)
+        public static void Set(this TextBoxBase textbox, string text)
         {
             if (textbox.InvokeRequired)
             {

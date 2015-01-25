@@ -199,3 +199,6 @@ $RECYCLE.BIN/
 
 # Microsoft Fakes
 FakesAssemblies/
+
+*.ncrunchsolution
+*.ncrunchproject

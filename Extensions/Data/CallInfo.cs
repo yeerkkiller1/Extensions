@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GoodInterfaces;
 
 namespace Extensions
 {
-    public class CallInfo : IComparable<CallInfo>
+    public class CallInfo : ICallInfo
     {
-        public string MemberName;
-        public string SourceFilePath;
-        public int LineNumber;
+        public string MemberName { get; set; }
+        public string SourceFilePath { get; set; }
+        public int LineNumber { get; set; }
 
         public CallInfo(string memberName, string sourceFilePath, int lineNumber)
         {
@@ -24,7 +25,7 @@ namespace Extensions
             return string.Format("{0} {1}:{2}", MemberName, SourceFilePath, LineNumber);
         }
 
-        public int CompareTo(CallInfo other)
+        public int CompareTo(ICallInfo other)
         {
             int diff = 0;
             diff = MemberName.CompareTo(other.MemberName);

@@ -43,5 +43,18 @@ namespace Extensions
                 );
             }
         }
+
+        public static void IsInTest()
+        {
+#if !NCRUNCH
+            throw new Exception();
+#endif
+        }
+        public static void IsNotInTest()
+        {
+#if NCRUNCH
+            throw new Exception();
+#endif
+        }
     }
 }
