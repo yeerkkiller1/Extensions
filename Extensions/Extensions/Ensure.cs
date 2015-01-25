@@ -46,15 +46,17 @@ namespace Extensions
 
         public static void IsInTest()
         {
-#if !NCRUNCH
-            throw new Exception();
-#endif
+            if(!NCrunch.IsInTest())
+            {
+                throw new Exception("This should only be run in tests, don't call it normally!");
+            }
         }
         public static void IsNotInTest()
         {
-#if NCRUNCH
-            throw new Exception();
-#endif
+            if (NCrunch.IsInTest())
+            {
+                throw new Exception("This should NOT be run in tests, because our code sucks and is not test friendly!");
+            }
         }
     }
 }
