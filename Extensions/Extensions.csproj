@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\CallInfo.cs" />
+    <Compile Include="Data\DataSeeds.cs" />
     <Compile Include="Extensions\CollectionExts.cs" />
     <Compile Include="Extensions\Ensure.cs" />
     <Compile Include="Extensions\EnumerableExts.cs" />
@@ -56,7 +57,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Interfaces\Interfaces\Interfaces.csproj">
+    <ProjectReference Include="..\..\..\Extensions\Interfaces\Interfaces\Interfaces.csproj">
       <Project>{85ded7d5-d374-4280-9e3a-90cef356518d}</Project>
       <Name>Interfaces</Name>
     </ProjectReference>
