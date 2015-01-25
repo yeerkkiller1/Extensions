@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\CallInfo.cs" />
+    <Compile Include="Data\DataSeeds.cs" />
     <Compile Include="Extensions\CollectionExts.cs" />
     <Compile Include="Extensions\Ensure.cs" />
     <Compile Include="Extensions\EnumerableExts.cs" />
