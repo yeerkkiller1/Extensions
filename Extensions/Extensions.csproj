@@ -57,8 +57,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Extensions\Interfaces\Interfaces\Interfaces.csproj">
-      <Project>{85ded7d5-d374-4280-9e3a-90cef356518d}</Project>
+    <ProjectReference Include="..\Interfaces\Interfaces\Interfaces.csproj">
+      <Project>{6d853b4c-db4f-4604-bd64-a43d8dca3195}</Project>
       <Name>Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
