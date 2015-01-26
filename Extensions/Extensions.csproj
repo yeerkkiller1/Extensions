@@ -52,6 +52,7 @@
     <Compile Include="Extensions\ObservableExts.cs" />
     <Compile Include="Extensions\ThreadExts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings\Escape.cs" />
     <Compile Include="Strings\StringComparators.cs" />
   </ItemGroup>
   <ItemGroup>
